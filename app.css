@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root{
+    --color1: #A4793F;
+    --color2: #2A5766;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-image: url(appimage.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    overflow: hidden;
+    font-size: 1.2rem;
+    padding: 2rem;
+}
+
+h2{
+    text-align: center;
+}
+
+.excersice-heading{
+    color: #fff;
+}
+
+.exercise{
+    display: flex;
+    justify-content: space-around; 
+    margin-top: 8%;
+
+}
+
+.watch-demo{
+    font-size: 1.1rem;
+    border: none;
+    background-color: var(--color2);
+    color: #fff;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    outline: 0;
+    margin-left: 8%;
+}
+
+#relax{
+    margin: -5%;
+    height: 110vh;
+    width: 110vw;
+}
+
+@media screen and (max-width: 900px){
+    body{
+        font-size: 0.8rem;
+    }
+
+    .watch-demo{
+        font-size: 0.8rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.3rem;
+        outline: 0;
+    }
+    .exercise{
+        margin-top: 0%;
+    }
+    .excersice-2{
+        margin-top: 15%;
+    }
+    #relax{
+        margin: -10%;
+        margin-left: -40%;
+        height: 100vh;
+        width: 150vw;
+    }
+}
+
+
+#monday, #tuesday, #wednesday,#thursday, #friday, #saturday, #sunday{
+    display: none;
+}
